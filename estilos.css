@@ -1,0 +1,70 @@
+/* 🌍 Estilos generales del fondo de la pantalla */
+body {
+    background-color: #121212; /* Un negro más profundo estilo hacker */
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;             /* Activa el modo de cajas flexibles */
+    justify-content: center;    /* Centra la tarjeta horizontalmente */
+    align-items: center;        /* Centra la tarjeta verticalmente */
+    height: 100vh;             /* Hace que ocupe todo el alto del monitor */
+    margin: 0;
+}
+
+/* 💳 DISEÑO DE LA TARJETA (Usamos el punto "." para las clases) */
+.tarjeta-perfil {
+    background-color: #1e1e1e; /* Fondo gris oscuro para resaltar */
+    padding: 30px;
+    border-radius: 12px;       /* Redondea las esquinas */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); /* Sombra elegante */
+    text-align: center;        /* Centra el texto de adentro */
+    max-width: 350px;          /* Limita el ancho de la tarjeta */
+}
+
+.tarjeta-perfil h1 {
+    color: #4fc1ff;            /* Título azul brillante */
+    margin-top: 0;
+    border: none;
+}
+
+.subtitulo {
+    color: #858585;            /* Gris claro para el puesto */
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase; /* Todo a MAYÚSCULAS automáticamente */
+}
+
+.descripcion {
+    color: #cccccc;
+    font-size: 1rem;
+    line-height: 1.6;          /* Separa los renglones para leer cómodo */
+    margin: 20px 0;
+}
+
+/* 🕹️ DISEÑO DEL BOTÓN INTERACTIVO */
+.boton-github {
+    background-color: #4fc1ff; /* Fondo azul brillante */
+    color: #121212;            /* Letras oscuras */
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;        /* Bordes redondeados */
+    cursor: pointer;           /* Pone la manita del ratón */
+    transition: all 0.3s ease; /* EFECTO DX: Hace que el cambio visual sea suave */
+}
+
+/* El truco mágico del :hover (cuando pasas el ratón encima) */
+.boton-github:hover {
+    background-color: #ffffff; /* Cambia a color blanco */
+    transform: scale(1.05);    /* Se agranda un 5% */
+    box-shadow: 0 0 15px #4fc1ff; /* Efecto de brillo neón azul */
+}
+/* 📷 DISEÑO DE LA FOTO DE PERFIL */
+.foto-perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;        /* Lo hace un círculo perfecto */
+    object-fit: cover;         /* Evita que se deforme */
+    border: 3px solid #4fc1ff; /* Borde azul de código */
+    margin-bottom: 15px;       /* Separa la foto del nombre */
+}
